@@ -10,7 +10,7 @@ import os
 import csv
 filepath = os.path.join("..", "PyBank_Solution","budget_data_2.csv")
 
-with open("budget_data_1.csv", "r") as csvfile:
+with open("budget_data_2.csv", "r") as csvfile:
     csv_reader = csv.reader(csvfile, delimiter =",")
     csv_header = next(csv_reader)
     file_to_output = "budget_analysis.txt"
