@@ -21,8 +21,8 @@ with open("budget_data_2.csv", "r") as csvfile:
     avg_revenue_change = 0
     max_revenue_change = 0
     min_revenue_change = 0
-    max_revenue_change_date = 0
-    min_revenue_change_date = 0
+    max_revenue_change_date = None
+    min_revenue_change_date = None
     revenue = []
     revenue_change = []
     date = []
@@ -32,23 +32,26 @@ with open("budget_data_2.csv", "r") as csvfile:
         total_months = total_months + 1  #Calculating total months
         
         total_revenue = total_revenue + int(row[1]) #Calculating total revenue
+        revenue.append(row[1])  #Preparing revenue list
+        date.append(row[0])     #Preparing date list
 
 
 #Calculating change in revenue for average and min, max scenarios
 
-    for i in range(1,len(revenue)):
-        revenue_change.append(revenue[i+1] - revenue[i]) 
+    for i in range(len(revenue)-1):
+        change= int(revenue[i+1]) - int(revenue[i]) 
+        revenue_change.append(change)
 
-        avg_revenue_change = sum(revenue_change)/len(revenue_change) #Calculating average change in revenue between months over the entire period
+    avg_revenue_change = abs(sum(revenue_change)/len(revenue_change)) #Calculating average change in revenue between months over the entire period
 
-        max_revenue_change = max(revenue_change)
-        min_revenue_change = min(revenue_change)
+    max_revenue_change = max(revenue_change)        #Calculating Max revenue change
+    min_revenue_change = min(revenue_change)        #Calculating Min revenue change
 
 
-        max_revenue_change_date = str(date[revenue_change.index(max(revenue_change))])
-        min_revenue_change_date = str(date[revenue_change.index(min(revenue_change))])
+    max_revenue_change_date = str(date[revenue_change.index(max(revenue_change))])
+    min_revenue_change_date = str(date[revenue_change.index(min(revenue_change))])
 
-    print(str(max_revenue_change))
+#Printing all the outputs
     print("Financial Analysis")
     print("----------------------------")
 
@@ -65,7 +68,7 @@ with open("budget_data_2.csv", "r") as csvfile:
     print("Greatest Increase in Revenue: " + str(max_revenue_change_date)+ " ($" + str(max_revenue_change) +")")
 
     #The greatest decrease in revenue (date and amount) over the entire period
-    print("Greatest Decrease in Revenue:" + str(min_revenue_change_date)+ " ($" + str(min_revenue_change) +")")
+    print("Greatest Decrease in Revenue: " + str(min_revenue_change_date)+ " ($" + str(min_revenue_change) +")")
 
 
     #Ouput to a text file
@@ -76,6 +79,6 @@ with open(file_to_output, "w") as txt_file:
     txt_file.write("\n")
     txt_file.write("Average Change: " + "$" + str(avg_revenue_change))
     txt_file.write("\n")
-    txt_file.write("Greatest Increase: " + str(max_revenue_change_date)+ " ($" +str(max_revenue_change) +")") 
+    txt_file.write("Greatest Increase: " + str(max_revenue_change_date)+ " ($" + str(max_revenue_change) +")") 
     txt_file.write("\n")
     txt_file.write("Greatest Decrease: " + str(min_revenue_change_date)+ " ($" + str(min_revenue_change)+")")
