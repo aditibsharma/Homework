@@ -1745,16 +1745,25 @@ city_weather_data_df
   </thead>
   <tbody>
     <tr>
-      <th>146</th>
-      <td>Kodinsk</td>
-      <td>58.60</td>
-      <td>-17.20</td>
-      <td>50</td>
-      <td>20</td>
-      <td>1.63</td>
+      <th>157</th>
+      <td>Punta Arenas</td>
+      <td>-53.16</td>
+      <td>12.00</td>
+      <td>71</td>
+      <td>75</td>
+      <td>7.70</td>
     </tr>
     <tr>
-      <th>119</th>
+      <th>299</th>
+      <td>Petukhovo</td>
+      <td>55.06</td>
+      <td>-9.00</td>
+      <td>89</td>
+      <td>68</td>
+      <td>4.33</td>
+    </tr>
+    <tr>
+      <th>4</th>
       <td>Saint-Philippe</td>
       <td>45.36</td>
       <td>-1.50</td>
@@ -1763,214 +1772,52 @@ city_weather_data_df
       <td>8.70</td>
     </tr>
     <tr>
-      <th>274</th>
-      <td>Provideniya</td>
-      <td>64.42</td>
-      <td>-1.20</td>
-      <td>95</td>
-      <td>92</td>
-      <td>4.83</td>
-    </tr>
-    <tr>
-      <th>833</th>
-      <td>Kijang</td>
-      <td>35.24</td>
-      <td>9.00</td>
-      <td>26</td>
-      <td>0</td>
-      <td>5.70</td>
-    </tr>
-    <tr>
-      <th>458</th>
-      <td>Saint-Philippe</td>
-      <td>45.36</td>
-      <td>-1.50</td>
-      <td>86</td>
-      <td>75</td>
-      <td>8.70</td>
-    </tr>
-    <tr>
-      <th>174</th>
-      <td>Iqaluit</td>
-      <td>63.75</td>
-      <td>-12.00</td>
-      <td>92</td>
-      <td>75</td>
-      <td>6.70</td>
-    </tr>
-    <tr>
-      <th>320</th>
-      <td>Dali</td>
-      <td>25.60</td>
-      <td>18.26</td>
-      <td>51</td>
-      <td>0</td>
-      <td>1.23</td>
-    </tr>
-    <tr>
-      <th>311</th>
-      <td>Porto Novo</td>
-      <td>-23.68</td>
-      <td>22.00</td>
-      <td>94</td>
-      <td>75</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
-      <th>498</th>
-      <td>Rikitea</td>
-      <td>-23.12</td>
-      <td>27.16</td>
+      <th>189</th>
+      <td>Kavieng</td>
+      <td>-2.57</td>
+      <td>29.83</td>
       <td>100</td>
-      <td>92</td>
-      <td>8.43</td>
+      <td>24</td>
+      <td>2.53</td>
     </tr>
     <tr>
-      <th>561</th>
-      <td>Garden Acres</td>
-      <td>37.96</td>
-      <td>9.48</td>
-      <td>76</td>
-      <td>40</td>
-      <td>4.60</td>
-    </tr>
-    <tr>
-      <th>772</th>
-      <td>Tuapse</td>
-      <td>44.10</td>
-      <td>2.21</td>
-      <td>81</td>
-      <td>8</td>
-      <td>0.78</td>
-    </tr>
-    <tr>
-      <th>542</th>
-      <td>Myitkyina</td>
-      <td>25.38</td>
-      <td>25.06</td>
-      <td>63</td>
-      <td>12</td>
-      <td>1.33</td>
-    </tr>
-    <tr>
-      <th>390</th>
-      <td>Hermanus</td>
-      <td>-34.42</td>
-      <td>16.68</td>
-      <td>87</td>
-      <td>56</td>
-      <td>3.78</td>
-    </tr>
-    <tr>
-      <th>752</th>
-      <td>Frontera</td>
-      <td>18.53</td>
-      <td>25.00</td>
-      <td>73</td>
+      <th>257</th>
+      <td>East London</td>
+      <td>-33.02</td>
+      <td>20.00</td>
+      <td>94</td>
       <td>40</td>
       <td>3.10</td>
     </tr>
     <tr>
-      <th>313</th>
-      <td>Rio Claro</td>
-      <td>-22.41</td>
-      <td>20.03</td>
-      <td>94</td>
-      <td>44</td>
-      <td>0.68</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>Yerbogachen</td>
-      <td>61.28</td>
-      <td>-20.40</td>
-      <td>52</td>
-      <td>0</td>
-      <td>1.73</td>
-    </tr>
-    <tr>
-      <th>478</th>
-      <td>Albany</td>
-      <td>42.65</td>
-      <td>2.27</td>
-      <td>97</td>
+      <th>121</th>
+      <td>Yellowknife</td>
+      <td>62.45</td>
+      <td>-22.00</td>
+      <td>63</td>
       <td>90</td>
-      <td>3.60</td>
+      <td>4.10</td>
     </tr>
     <tr>
-      <th>690</th>
-      <td>Lourdes</td>
-      <td>13.73</td>
-      <td>21.59</td>
-      <td>72</td>
-      <td>0</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
-      <th>452</th>
-      <td>Grandview</td>
-      <td>38.89</td>
-      <td>0.98</td>
-      <td>47</td>
-      <td>1</td>
-      <td>1.23</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>Stephenville</td>
-      <td>32.22</td>
-      <td>7.80</td>
-      <td>81</td>
-      <td>1</td>
-      <td>2.10</td>
-    </tr>
-    <tr>
-      <th>745</th>
-      <td>Jamestown</td>
-      <td>-33.21</td>
-      <td>25.01</td>
-      <td>66</td>
-      <td>44</td>
-      <td>0.78</td>
-    </tr>
-    <tr>
-      <th>786</th>
-      <td>Mahon</td>
-      <td>51.89</td>
-      <td>-2.00</td>
+      <th>208</th>
+      <td>Kirakira</td>
+      <td>-10.46</td>
+      <td>27.38</td>
       <td>100</td>
-      <td>75</td>
-      <td>8.70</td>
+      <td>92</td>
+      <td>4.73</td>
     </tr>
     <tr>
-      <th>186</th>
-      <td>Ust-Kulom</td>
-      <td>61.69</td>
-      <td>-10.37</td>
-      <td>82</td>
-      <td>44</td>
-      <td>2.68</td>
+      <th>295</th>
+      <td>Huarmey</td>
+      <td>-10.07</td>
+      <td>16.53</td>
+      <td>87</td>
+      <td>8</td>
+      <td>1.18</td>
     </tr>
     <tr>
-      <th>279</th>
-      <td>Qaanaaq</td>
-      <td>77.48</td>
-      <td>-11.12</td>
-      <td>93</td>
-      <td>68</td>
-      <td>3.78</td>
-    </tr>
-    <tr>
-      <th>784</th>
-      <td>Balkanabat</td>
-      <td>39.51</td>
-      <td>9.91</td>
-      <td>77</td>
-      <td>76</td>
-      <td>2.28</td>
-    </tr>
-    <tr>
-      <th>505</th>
+      <th>93</th>
       <td>Avarua</td>
       <td>-21.21</td>
       <td>28.00</td>
@@ -1979,7 +1826,25 @@ city_weather_data_df
       <td>4.60</td>
     </tr>
     <tr>
-      <th>226</th>
+      <th>138</th>
+      <td>Pilar</td>
+      <td>-34.46</td>
+      <td>24.04</td>
+      <td>78</td>
+      <td>0</td>
+      <td>2.13</td>
+    </tr>
+    <tr>
+      <th>333</th>
+      <td>Chokurdakh</td>
+      <td>70.62</td>
+      <td>-19.50</td>
+      <td>74</td>
+      <td>80</td>
+      <td>8.73</td>
+    </tr>
+    <tr>
+      <th>405</th>
       <td>Mataura</td>
       <td>-46.19</td>
       <td>21.68</td>
@@ -1988,31 +1853,166 @@ city_weather_data_df
       <td>4.23</td>
     </tr>
     <tr>
-      <th>401</th>
-      <td>Norman Wells</td>
-      <td>65.28</td>
-      <td>-25.00</td>
-      <td>69</td>
-      <td>5</td>
-      <td>3.10</td>
+      <th>454</th>
+      <td>Henties Bay</td>
+      <td>-22.12</td>
+      <td>16.68</td>
+      <td>100</td>
+      <td>56</td>
+      <td>2.88</td>
     </tr>
     <tr>
-      <th>183</th>
-      <td>Jamestown</td>
-      <td>-33.21</td>
-      <td>25.01</td>
-      <td>66</td>
-      <td>44</td>
-      <td>0.78</td>
+      <th>448</th>
+      <td>Namibe</td>
+      <td>-15.19</td>
+      <td>22.88</td>
+      <td>100</td>
+      <td>20</td>
+      <td>2.13</td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>Atar</td>
-      <td>20.52</td>
-      <td>10.66</td>
-      <td>79</td>
+      <th>353</th>
+      <td>Vaini</td>
+      <td>15.34</td>
+      <td>32.03</td>
+      <td>28</td>
       <td>0</td>
-      <td>0.88</td>
+      <td>1.93</td>
+    </tr>
+    <tr>
+      <th>307</th>
+      <td>Ponta do Sol</td>
+      <td>-20.63</td>
+      <td>18.13</td>
+      <td>97</td>
+      <td>56</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>251</th>
+      <td>Rikitea</td>
+      <td>-23.12</td>
+      <td>27.16</td>
+      <td>100</td>
+      <td>92</td>
+      <td>8.43</td>
+    </tr>
+    <tr>
+      <th>278</th>
+      <td>Airai</td>
+      <td>-8.93</td>
+      <td>23.53</td>
+      <td>95</td>
+      <td>44</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>416</th>
+      <td>Vila Velha</td>
+      <td>-3.71</td>
+      <td>24.00</td>
+      <td>100</td>
+      <td>75</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <th>310</th>
+      <td>Vao</td>
+      <td>59.10</td>
+      <td>-14.72</td>
+      <td>84</td>
+      <td>0</td>
+      <td>3.03</td>
+    </tr>
+    <tr>
+      <th>468</th>
+      <td>Deputatskiy</td>
+      <td>69.30</td>
+      <td>-25.92</td>
+      <td>61</td>
+      <td>68</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>Punta Arenas</td>
+      <td>-53.16</td>
+      <td>12.00</td>
+      <td>71</td>
+      <td>75</td>
+      <td>7.70</td>
+    </tr>
+    <tr>
+      <th>431</th>
+      <td>Rikitea</td>
+      <td>-23.12</td>
+      <td>27.16</td>
+      <td>100</td>
+      <td>92</td>
+      <td>8.43</td>
+    </tr>
+    <tr>
+      <th>489</th>
+      <td>Vila Praia de Ancora</td>
+      <td>41.81</td>
+      <td>6.10</td>
+      <td>93</td>
+      <td>20</td>
+      <td>3.60</td>
+    </tr>
+    <tr>
+      <th>300</th>
+      <td>Vaini</td>
+      <td>15.34</td>
+      <td>32.03</td>
+      <td>28</td>
+      <td>0</td>
+      <td>1.93</td>
+    </tr>
+    <tr>
+      <th>449</th>
+      <td>Bluff</td>
+      <td>-23.58</td>
+      <td>32.01</td>
+      <td>73</td>
+      <td>12</td>
+      <td>1.88</td>
+    </tr>
+    <tr>
+      <th>313</th>
+      <td>Hovd</td>
+      <td>63.83</td>
+      <td>-10.78</td>
+      <td>65</td>
+      <td>0</td>
+      <td>4.10</td>
+    </tr>
+    <tr>
+      <th>370</th>
+      <td>Hobart</td>
+      <td>-42.88</td>
+      <td>21.00</td>
+      <td>56</td>
+      <td>40</td>
+      <td>4.60</td>
+    </tr>
+    <tr>
+      <th>387</th>
+      <td>Dikson</td>
+      <td>73.51</td>
+      <td>-17.72</td>
+      <td>95</td>
+      <td>64</td>
+      <td>6.13</td>
+    </tr>
+    <tr>
+      <th>292</th>
+      <td>Avarua</td>
+      <td>-21.21</td>
+      <td>28.00</td>
+      <td>78</td>
+      <td>40</td>
+      <td>4.60</td>
     </tr>
     <tr>
       <th>...</th>
@@ -2024,16 +2024,25 @@ city_weather_data_df
       <td>...</td>
     </tr>
     <tr>
-      <th>627</th>
-      <td>Marawi</td>
-      <td>8.00</td>
-      <td>24.81</td>
-      <td>94</td>
+      <th>24</th>
+      <td>Balkanabat</td>
+      <td>39.51</td>
+      <td>9.91</td>
+      <td>77</td>
       <td>76</td>
-      <td>1.38</td>
+      <td>2.28</td>
     </tr>
     <tr>
-      <th>768</th>
+      <th>235</th>
+      <td>Arraial do Cabo</td>
+      <td>-22.97</td>
+      <td>24.93</td>
+      <td>98</td>
+      <td>8</td>
+      <td>4.33</td>
+    </tr>
+    <tr>
+      <th>124</th>
       <td>Kruisfontein</td>
       <td>-34.00</td>
       <td>17.76</td>
@@ -2042,196 +2051,151 @@ city_weather_data_df
       <td>5.03</td>
     </tr>
     <tr>
-      <th>811</th>
-      <td>Dalaba</td>
-      <td>10.69</td>
-      <td>24.51</td>
-      <td>49</td>
+      <th>179</th>
+      <td>Nouadhibou</td>
+      <td>20.93</td>
+      <td>17.00</td>
       <td>88</td>
-      <td>3.38</td>
-    </tr>
-    <tr>
-      <th>206</th>
-      <td>Hermanus</td>
-      <td>-34.42</td>
-      <td>16.68</td>
-      <td>87</td>
-      <td>56</td>
-      <td>3.78</td>
-    </tr>
-    <tr>
-      <th>891</th>
-      <td>Ajaccio</td>
-      <td>41.93</td>
-      <td>12.47</td>
-      <td>87</td>
-      <td>92</td>
-      <td>6.20</td>
-    </tr>
-    <tr>
-      <th>547</th>
-      <td>Avarua</td>
-      <td>-21.21</td>
-      <td>28.00</td>
-      <td>78</td>
-      <td>40</td>
-      <td>4.60</td>
-    </tr>
-    <tr>
-      <th>740</th>
-      <td>Kruisfontein</td>
-      <td>-34.00</td>
-      <td>17.76</td>
-      <td>100</td>
-      <td>100</td>
-      <td>5.03</td>
-    </tr>
-    <tr>
-      <th>866</th>
-      <td>Colesberg</td>
-      <td>-30.72</td>
-      <td>16.43</td>
-      <td>83</td>
       <td>12</td>
+      <td>3.60</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Kapaa</td>
+      <td>22.08</td>
+      <td>22.46</td>
+      <td>88</td>
+      <td>90</td>
+      <td>8.70</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Saint-Philippe</td>
+      <td>45.36</td>
+      <td>-1.50</td>
+      <td>86</td>
+      <td>75</td>
+      <td>8.70</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>Puerto Ayora</td>
+      <td>-0.74</td>
+      <td>26.01</td>
+      <td>100</td>
+      <td>80</td>
       <td>2.43</td>
     </tr>
     <tr>
-      <th>754</th>
-      <td>Grindavik</td>
-      <td>63.84</td>
-      <td>-2.00</td>
-      <td>63</td>
-      <td>0</td>
-      <td>9.30</td>
-    </tr>
-    <tr>
-      <th>712</th>
-      <td>Padang</td>
-      <td>-0.92</td>
-      <td>27.41</td>
-      <td>100</td>
-      <td>8</td>
-      <td>1.58</td>
-    </tr>
-    <tr>
-      <th>259</th>
-      <td>Mossendjo</td>
-      <td>-2.95</td>
-      <td>20.76</td>
-      <td>92</td>
-      <td>32</td>
-      <td>0.88</td>
-    </tr>
-    <tr>
-      <th>464</th>
-      <td>Punta Arenas</td>
-      <td>-53.16</td>
-      <td>12.00</td>
-      <td>71</td>
-      <td>75</td>
-      <td>7.70</td>
-    </tr>
-    <tr>
-      <th>480</th>
-      <td>Chitral</td>
-      <td>35.85</td>
-      <td>-4.10</td>
-      <td>90</td>
-      <td>92</td>
-      <td>0.63</td>
-    </tr>
-    <tr>
-      <th>600</th>
-      <td>Kodiak</td>
-      <td>39.95</td>
-      <td>-2.00</td>
+      <th>350</th>
+      <td>Bambous Virieux</td>
+      <td>-20.34</td>
+      <td>29.00</td>
       <td>79</td>
-      <td>1</td>
+      <td>75</td>
+      <td>7.20</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Rikitea</td>
+      <td>-23.12</td>
+      <td>27.16</td>
+      <td>100</td>
+      <td>92</td>
+      <td>8.43</td>
+    </tr>
+    <tr>
+      <th>453</th>
+      <td>Bredasdorp</td>
+      <td>-34.53</td>
+      <td>22.00</td>
+      <td>64</td>
+      <td>68</td>
+      <td>7.20</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Norman Wells</td>
+      <td>65.28</td>
+      <td>-25.00</td>
+      <td>69</td>
+      <td>5</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>Bay Roberts</td>
+      <td>47.58</td>
+      <td>1.00</td>
+      <td>100</td>
+      <td>90</td>
       <td>2.10</td>
     </tr>
     <tr>
-      <th>858</th>
-      <td>Vaini</td>
-      <td>15.34</td>
-      <td>32.03</td>
-      <td>28</td>
-      <td>0</td>
-      <td>1.93</td>
+      <th>156</th>
+      <td>Rio Grande</td>
+      <td>-32.03</td>
+      <td>21.63</td>
+      <td>98</td>
+      <td>20</td>
+      <td>1.23</td>
     </tr>
     <tr>
-      <th>344</th>
-      <td>Vaini</td>
-      <td>15.34</td>
-      <td>32.03</td>
-      <td>28</td>
-      <td>0</td>
-      <td>1.93</td>
+      <th>130</th>
+      <td>Yellowknife</td>
+      <td>62.45</td>
+      <td>-22.00</td>
+      <td>63</td>
+      <td>90</td>
+      <td>4.10</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Avarua</td>
-      <td>-21.21</td>
-      <td>28.00</td>
-      <td>78</td>
-      <td>40</td>
-      <td>4.60</td>
+      <th>347</th>
+      <td>Cherskiy</td>
+      <td>68.75</td>
+      <td>-20.92</td>
+      <td>70</td>
+      <td>68</td>
+      <td>3.78</td>
     </tr>
     <tr>
-      <th>98</th>
-      <td>Derzhavinsk</td>
-      <td>51.10</td>
-      <td>-15.35</td>
-      <td>87</td>
-      <td>8</td>
-      <td>3.58</td>
-    </tr>
-    <tr>
-      <th>456</th>
-      <td>Hobart</td>
-      <td>-42.88</td>
+      <th>351</th>
+      <td>New Norfolk</td>
+      <td>-42.78</td>
       <td>21.00</td>
       <td>56</td>
       <td>40</td>
       <td>4.60</td>
     </tr>
     <tr>
-      <th>55</th>
-      <td>Vila Praia de Ancora</td>
-      <td>41.81</td>
-      <td>6.10</td>
-      <td>93</td>
-      <td>20</td>
-      <td>3.60</td>
-    </tr>
-    <tr>
-      <th>157</th>
-      <td>Uarini</td>
-      <td>-2.98</td>
-      <td>22.91</td>
-      <td>97</td>
-      <td>56</td>
-      <td>2.13</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Pangkalanbuun</td>
-      <td>-2.68</td>
-      <td>31.41</td>
-      <td>84</td>
-      <td>8</td>
+      <th>254</th>
+      <td>Ust-Ilimsk</td>
+      <td>57.96</td>
+      <td>-16.45</td>
+      <td>46</td>
+      <td>12</td>
       <td>1.68</td>
     </tr>
     <tr>
-      <th>729</th>
-      <td>Grindavik</td>
-      <td>63.84</td>
-      <td>-2.00</td>
-      <td>63</td>
-      <td>0</td>
-      <td>9.30</td>
+      <th>272</th>
+      <td>Severo-Kurilsk</td>
+      <td>50.68</td>
+      <td>-1.12</td>
+      <td>100</td>
+      <td>92</td>
+      <td>15.73</td>
     </tr>
     <tr>
-      <th>438</th>
+      <th>250</th>
+      <td>Arraial do Cabo</td>
+      <td>-22.97</td>
+      <td>24.93</td>
+      <td>98</td>
+      <td>8</td>
+      <td>4.33</td>
+    </tr>
+    <tr>
+      <th>78</th>
       <td>Ushuaia</td>
       <td>-54.81</td>
       <td>9.00</td>
@@ -2240,58 +2204,94 @@ city_weather_data_df
       <td>11.30</td>
     </tr>
     <tr>
-      <th>301</th>
-      <td>Ketchikan</td>
-      <td>55.34</td>
-      <td>3.00</td>
-      <td>47</td>
+      <th>458</th>
+      <td>Cayenne</td>
+      <td>4.94</td>
+      <td>24.00</td>
+      <td>94</td>
       <td>75</td>
-      <td>4.60</td>
+      <td>2.60</td>
     </tr>
     <tr>
-      <th>380</th>
-      <td>Umm Lajj</td>
-      <td>25.02</td>
-      <td>22.03</td>
-      <td>79</td>
-      <td>0</td>
-      <td>3.08</td>
+      <th>185</th>
+      <td>Atuona</td>
+      <td>-9.80</td>
+      <td>27.78</td>
+      <td>97</td>
+      <td>64</td>
+      <td>8.08</td>
     </tr>
     <tr>
-      <th>880</th>
-      <td>General Pico</td>
-      <td>-35.66</td>
-      <td>19.58</td>
-      <td>63</td>
-      <td>0</td>
-      <td>4.33</td>
-    </tr>
-    <tr>
-      <th>378</th>
-      <td>Avarua</td>
-      <td>-21.21</td>
-      <td>28.00</td>
-      <td>78</td>
-      <td>40</td>
-      <td>4.60</td>
-    </tr>
-    <tr>
-      <th>831</th>
-      <td>Bethel</td>
-      <td>60.79</td>
-      <td>-2.00</td>
-      <td>92</td>
+      <th>266</th>
+      <td>Nhamunda</td>
+      <td>-2.19</td>
+      <td>24.96</td>
       <td>90</td>
-      <td>10.30</td>
+      <td>0</td>
+      <td>1.53</td>
     </tr>
     <tr>
-      <th>285</th>
-      <td>Hilo</td>
-      <td>19.71</td>
-      <td>15.92</td>
+      <th>349</th>
+      <td>Pevek</td>
+      <td>69.70</td>
+      <td>-8.85</td>
+      <td>82</td>
       <td>88</td>
-      <td>90</td>
-      <td>3.60</td>
+      <td>8.28</td>
+    </tr>
+    <tr>
+      <th>288</th>
+      <td>Jamestown</td>
+      <td>-33.21</td>
+      <td>25.01</td>
+      <td>66</td>
+      <td>44</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Tasiilaq</td>
+      <td>65.61</td>
+      <td>-11.00</td>
+      <td>78</td>
+      <td>12</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>Airai</td>
+      <td>-8.93</td>
+      <td>23.53</td>
+      <td>95</td>
+      <td>44</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>Chitrakonda</td>
+      <td>18.12</td>
+      <td>32.08</td>
+      <td>26</td>
+      <td>0</td>
+      <td>1.48</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Luderitz</td>
+      <td>-26.65</td>
+      <td>17.00</td>
+      <td>77</td>
+      <td>0</td>
+      <td>8.70</td>
+    </tr>
+    <tr>
+      <th>395</th>
+      <td>Santiago</td>
+      <td>-33.44</td>
+      <td>16.00</td>
+      <td>77</td>
+      <td>0</td>
+      <td>2.60</td>
     </tr>
   </tbody>
 </table>
@@ -2309,7 +2309,7 @@ city_weather_data_df = city_weather_data_df.reset_index(drop=True)
 city_weather_data_df.to_csv("City_Weather_Data.csv")
 ```
 
-## Latitude Vs Temperature Plot
+## Latitude vs. Temperature Plot
 
 
 ```python
@@ -2317,7 +2317,7 @@ city_weather_data_df.to_csv("City_Weather_Data.csv")
 plt.scatter(city_weather_data_df["Latitude"], city_weather_data_df["Temperature"], marker="o")
 
 # Incorporate the other graph properties
-plt.title("City Latitude vs Max Temperature")
+plt.title("City Latitude vs. Max Temperature")
 plt.ylabel("Max Temperature (F)")
 plt.xlabel("Latitude")
 plt.grid(True)
@@ -2333,7 +2333,7 @@ plt.show()
 ![png](output_10_0.png)
 
 
-## Latitude Vs Humidity Plot
+## Latitude vs. Humidity Plot
 
 
 ```python
@@ -2341,7 +2341,7 @@ plt.show()
 plt.scatter(city_weather_data_df["Latitude"], city_weather_data_df["Humidity"], marker="o")
 
 # Incorporate the other graph properties
-plt.title("City Latitude vs Humidity")
+plt.title("City Latitude vs. Humidity")
 plt.ylabel("Humidity (%)")
 plt.xlabel("Latitude")
 plt.grid(True)
@@ -2357,7 +2357,7 @@ plt.show()
 ![png](output_12_0.png)
 
 
-## Latitude Vs Cloudiness Plot
+## Latitude vs. Cloudiness Plot
 
 
 ```python
@@ -2365,7 +2365,7 @@ plt.show()
 plt.scatter(city_weather_data_df["Latitude"], city_weather_data_df["Cloudiness"], marker="o")
 
 # Incorporate the other graph properties
-plt.title("City Latitude vs Cloudiness")
+plt.title("City Latitude vs. Cloudiness")
 plt.ylabel("Cloudiness (%)")
 plt.xlabel("Latitude")
 plt.grid(True)
@@ -2381,7 +2381,7 @@ plt.show()
 ![png](output_14_0.png)
 
 
-## Latitude Vs Wind Speed Plot
+## Latitude vs. Wind Speed Plot
 
 
 ```python
@@ -2389,7 +2389,7 @@ plt.show()
 plt.scatter(city_weather_data_df["Latitude"], city_weather_data_df["Wind Speed"], marker="o")
 
 # Incorporate the other graph properties
-plt.title("City Latitude vs Wind Speed")
+plt.title("City Latitude vs. Wind Speed")
 plt.ylabel("Wind Speed (mph)")
 plt.xlabel("Latitude")
 plt.grid(True)
