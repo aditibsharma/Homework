@@ -161,8 +161,53 @@ WHERE title = 'Hunchback Impossible';
 
 -- 6e. Using the tables payment and customer and the JOIN command, list the total paid by each customer. List the customers alphabetically by last name:
 
+SELECT * FROM payment;
+SELECT * FROM customer;
 
 
+SELECT first_name ,last_name, SUM(amount)
+FROM customer c
+INNER JOIN payment p
+ON c.customer_id = p.customer_id
+GROUP BY p.customer_id
+ORDER BY last_name ASC;
+
+-- 7a. The music of Queen and Kris Kristofferson have seen an unlikely resurgence. As an unintended consequence, films starting with the letters K and Q have also soared in popularity. 
+-- Use subqueries to display the titles of movies starting with the letters K and Q whose language is English.
+
+SELECT title
+FROM film
+WHERE (title LIKE 'K%' OR title LIKE 'Q%') 
+AND language_id=
+	(SELECT language_id
+    FROM language
+    WHERE name= 'English');
 
 
+-- 7b. Use subqueries to display all actors who appear in the film Alone Trip.
 
+SELECT first_name, last_name
+FROM actor
+WHERE actor_id
+	IN (SELECT actor_id FROM film_actor WHERE film_id 
+		IN (SELECT film_id from film where title='ALONE TRIP'));
+
+-- 7c. You want to run an email marketing campaign in Canada, for which you will need the names and email addresses of all Canadian customers. Use joins to retrieve this information.
+
+SELECT country, last_name, first_name, email
+FROM country c
+LEFT JOIN customer cu
+ON c.country_id = cu.customer_id
+WHERE country = 'Canada';
+
+-- 7d. Sales have been lagging among young families, and you wish to target all family movies for a promotion. Identify all movies categorized as famiy films.
+
+SELECT * FROM film_list;
+
+SELECT title, category
+FROM film_list
+WHERE category = 'Family';
+
+-- 7e. Display the most frequently rented movies in descending order.
+
+SELECT * FROM rental;
