@@ -202,7 +202,7 @@ WHERE country = 'Canada';
 
 -- 7d. Sales have been lagging among young families, and you wish to target all family movies for a promotion. Identify all movies categorized as famiy films.
 
-SELECT * FROM film_list;
+-- SELECT * FROM film_list;
 
 SELECT title, category
 FROM film_list
@@ -210,4 +210,95 @@ WHERE category = 'Family';
 
 -- 7e. Display the most frequently rented movies in descending order.
 
-SELECT * FROM rental;
+-- SELECT * FROM rental;
+-- SELECT * FROM inventory;
+
+SELECT title, COUNT(f.film_id) AS count_of_rented_movies
+FROM  film f
+JOIN inventory i 
+ON (f.film_id= i.film_id)
+JOIN rental r 
+ON (i.inventory_id=r.inventory_id)
+GROUP BY title 
+ORDER BY count_of_rented_movies DESC;
+
+-- 7f. Write a query to display how much business, in dollars, each store brought in.
+
+-- SELECT * FROM store;
+-- SELECT * FROM staff;
+-- SELECT * FROm payment;
+
+SELECT  s.store_id,SUM(amount) AS business_in_dollars
+FROM store s
+INNER JOIN staff st 
+ON s.store_id = st.store_id
+INNER JOIN payment p
+ON p.staff_id = st.staff_id 
+GROUP BY s.store_id
+ORDER BY business_in_dollars ASC;
+
+-- 7g. Write a query to display for each store its store ID, city, and country.
+
+-- SELECT * FROM store;
+-- SELECT * FROM city;
+-- SELECT * FROM country;
+
+
+SELECT store_id, city, country
+FROM store s
+JOIN address a
+ON (s.address_id=a.address_id)
+JOIN city c 
+ON (a.city_id=c.city_id)
+JOIN country ctry
+ON (c.country_id=ctry.country_id);
+
+-- 7h. List the top five genres in gross revenue in descending order. (Hint: you may need to use the following tables: category, film_category, inventory, payment, and rental.)
+
+-- SELECT * FROM category;
+-- SELECT * FROM film_category;
+-- SELECT * FROM inventory;
+-- SELECT * FROM payment;
+-- SELECT * FROM rental;
+
+SELECT name AS top_five, SUM(amount) AS gross_revenue
+FROM category c
+INNER JOIN film_category fc
+ON  c.category_id = fc.category_id
+INNER JOIN inventory i
+ON fc.film_id = i.film_id
+INNER JOIN rental r
+ON i.inventory_id = r.inventory_id
+INNER JOIN payment p 
+ON r.rental_id = p.rental_id
+GROUP BY top_five 
+ORDER BY gross_revenue  
+LIMIT 5;
+
+
+-- 8a. In your new role as an executive, you would like to have an easy way of viewing the Top five genres by gross revenue. 
+-- Use the solution from the problem above to create a view. If you haven't solved 7h, you can substitute another query to create a view
+
+CREATE VIEW top_five_grossing_genres AS
+
+SELECT name AS top_five, SUM(amount) AS gross_revenue
+FROM category c
+INNER JOIN film_category fc
+ON  c.category_id = fc.category_id
+INNER JOIN inventory i
+ON fc.film_id = i.film_id
+INNER JOIN rental r
+ON i.inventory_id = r.inventory_id
+INNER JOIN payment p 
+ON r.rental_id = p.rental_id
+GROUP BY top_five 
+ORDER BY gross_revenue  
+LIMIT 5;
+
+-- 8b. How would you display the view that you created in 8a?
+
+SELECT * FROM top_five_grossing_genres;
+
+-- 8c. You find that you no longer need the view top_five_genres. Write a query to delete it.
+
+DROP VIEW top_five_grossing_genres;
