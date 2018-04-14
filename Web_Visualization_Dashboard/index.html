@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Application</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <?php
+session_start();
+if($_GET['show_desktop_mode'] == 'true') {
+    $_SESSION['desktopmode'] = 'true';
+}
+?>
+<?php
+if($_SESSION['desktopmode'] == 'true') {
+    /* DESKTOP MODE */
+    ?>
+    <meta name="viewport" content="width=1024">
+    <?php
+} else {
+    // DEFAULT
+    ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+}
+?>
+</head>
+
+<body>
+  <!-- Creates the Overall Grid -->
+  <div class=".container">
+    <nav class="navbar navbar-inverse">      
+      <ul>
+        <li>
+          <a href="#">Latitude</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Maxtemp.html">Max Temperature</a></li>
+              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/humidity.html">Humidity</a></li>
+              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/cloudiness.html">Cloudiness</a></li>
+              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        <li>
+          <a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Comparisons.html">Comparison</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Data.html">Data</a>
+        </li>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+      </ul>
+    </nav>
+    <!-- Row 1 -->
+    <div class="row1">
+      <div class="col-sm-6">
+      <h2>Summary: Latitude vs. X</h2> 
+      <p style="color:rgba(4, 8, 65, 0.774);font-size:150%;font-family: Arial, Helvetica, sans-serif">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth.
+            There is no strong relationship between latitude and cloudiness, however, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.
+            There is no strong relationship between latitude and wind speed, however in northern hemispheres there is a flurry of cities with over 20 mph of wind. </p>
+     <img data-aria-label-part="" src="output_data/Fig3.png" alt="" style="width: 60%; top: -42px;"></div>
+      </div>
+      <!--Row 2-->
+    <div class="row2">
+        <div class="col-sm-6">
+         <h2>Visualisations</h2>
+      <section id="figure">
+      <img id="bio-image" src="output_data/Fig1.png" class="col-sm-12 col-md-6" style="width: 50%";>
+      <img id="bio-image" src="output_data/Fig2.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="output_data/Fig3.png" class="col-sm-12 col-md-6"style="width: 50%";>
+      <img id="bio-image" src="output_data/Fig4.png" class="col-sm-12 col-md-6"style="width: 50%";>
+    </section>   
+</div>
+</div>
+
+<div id="footer">@Copyright AditiSharma 2018</div>
+</body>
+
+</html>

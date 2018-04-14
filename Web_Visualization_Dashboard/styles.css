@@ -5,8 +5,12 @@ body {
 
 h1 {
   font-size: 80px;
+  color: blue;
 }
-
+h2 {
+  font-size: 50px;
+  color: rgb(5, 5, 77);
+}
 h3 {
   font-size: 30px;
 }
@@ -14,7 +18,7 @@ h3 {
 /* Giving our navbar some padding and a background color */
 .navbar {
   padding: 10px;
-  background: #5191fd;
+  background: #113f9b;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
