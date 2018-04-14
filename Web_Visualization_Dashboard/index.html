@@ -7,54 +7,35 @@
   <title>Web Application</title>
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
   <!-- CSS styles -->
   <link rel="stylesheet" href="styles.css">
 
-  <?php
-session_start();
-if($_GET['show_desktop_mode'] == 'true') {
-    $_SESSION['desktopmode'] = 'true';
-}
-?>
-<?php
-if($_SESSION['desktopmode'] == 'true') {
-    /* DESKTOP MODE */
-    ?>
-    <meta name="viewport" content="width=1024">
-    <?php
-} else {
-    // DEFAULT
-    ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php
-}
-?>
 </head>
 
 <body>
   <!-- Creates the Overall Grid -->
-  <div class=".container">
-    <nav class="navbar navbar-inverse">      
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">       
       <ul>
         <li>
           <a href="#">Latitude</a>
         </li>
         <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Maxtemp.html">Max Temperature</a></li>
-              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/humidity.html">Humidity</a></li>
-              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/cloudiness.html">Cloudiness</a></li>
-              <li><a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/windspeed.html">Wind Speed</a></li>
-            </ul>
+                <a href="plots.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                aria-expanded="false">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Maxtemp.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="windspeed.html">Wind Speed</a></li>
+                  </ul>
           </li>
         <li>
-          <a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Comparisons.html">Comparison</a>
+          <a href="Comparisons.html">Comparison</a>
         </li>
         <li>
-          <a href="file:///C:/Users/user/Downloads/Homework-master/Homework-master/Web_Visualization_Dashboard/Data.html">Data</a>
+          <a href="Data.html">Data</a>
         </li>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -84,7 +65,7 @@ if($_SESSION['desktopmode'] == 'true') {
 </div>
 </div>
 
-<div id="footer">@Copyright AditiSharma 2018</div>
+<div id="footer">@Copyright UT Data Analytics 2018</div>
 </body>
 
 </html>
