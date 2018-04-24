@@ -14,7 +14,7 @@ collection = db.mars_info
 
 @app.route("/")
 def index():
-   #mars = mongo.db.mars_info.find_one()
+    #mars = mongo.db.mars.find_one()
     return render_template("index.html")
 
 
@@ -22,10 +22,10 @@ def index():
 def scrape():
     mars = mongo.db.mars_info
     data = scrape_mars.scrape()
-    #mars.update(
-     #   {},
-     #   data,
-        upsert=True
+    mars.update(
+       {},
+       data,
+       upsert=True
     )
     return redirect("http://localhost:5000/", code=302)
 
