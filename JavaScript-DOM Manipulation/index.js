@@ -1,3 +1,4 @@
+
 // Get references to the tbody element, input field and button
 var $tbody = document.querySelector("tbody");
 var $Input = document.querySelector("#search");
@@ -10,21 +11,17 @@ var $searchBtn5 = document.querySelector("#shape");
 
 
 var $searchBtn0 = document.querySelector("#reset");
-
 $searchBtn0.addEventListener("click", reset);
 
 
-$searchBtn1.addEventListener("click", search1);
-$searchBtn2.addEventListener("click", search2);
-$searchBtn3.addEventListener("click", search3);
-$searchBtn4.addEventListener("click", search4);
-$searchBtn5.addEventListener("click", search5);
+$searchBtn1.addEventListener("click", datetime);
+$searchBtn2.addEventListener("click", city);
+$searchBtn3.addEventListener("click", state);
+$searchBtn4.addEventListener("click", country);
+$searchBtn5.addEventListener("click", shape);
 
-
-
+// Assigning variable to the dataset.
 var filter = dataSet;
-
-var x = "var"
 
 renderTable();
 
@@ -32,15 +29,14 @@ renderTable();
 
 function reset()
 {
-  filter = dataset;
+  $Input.value = "";
   renderTable();
 }
-
 
 function renderTable()
  {
   $tbody.innerHTML = "";
-  for (var i = 0; i < 50; i++) 
+  for (var i = 0; i < filter.length; i++) 
   {
     // Get get the current address object and its fields
     var address = filter[i];
@@ -56,11 +52,11 @@ function renderTable()
     }
   }}
 
-function search1() {
+function datetime() {
   // Format the user's search by removing leading and trailing whitespace, lowercase the string
   var filteritem = $Input.value.trim().toLowerCase();
 
-  // Set filteredAddresses to an array of all addresses whose "state" matches the filter
+  // Set filteredAddresses to an array of all addresses whose "datetime" matches the filter
   filter = filter.filter(function(address) {
     var addressState = address.datetime.toLowerCase();
 
@@ -69,11 +65,12 @@ function search1() {
   });
   renderTable();
 }
-function search2() {
+
+function city() {
   // Format the user's search by removing leading and trailing whitespace, lowercase the string
   var filteritem = $Input.value.trim().toLowerCase();
 
-  // Set filteredAddresses to an array of all addresses whose "state" matches the filter
+  // Set filteredAddresses to an array of all addresses whose "city" matches the filter
   filter = filter.filter(function(address) {
     var addressState = address.city.toLowerCase();
 
@@ -82,7 +79,8 @@ function search2() {
   });
   renderTable();
 }
-function search3() {
+
+function state() {
   // Format the user's search by removing leading and trailing whitespace, lowercase the string
   var filteritem = $Input.value.trim().toLowerCase();
 
@@ -96,11 +94,12 @@ function search3() {
   });
   renderTable();
 }
-function search4() {
+
+function country() {
   // Format the user's search by removing leading and trailing whitespace, lowercase the string
   var filteritem = $Input.value.trim().toLowerCase();
 
-  // Set filteredAddresses to an array of all addresses whose "state" matches the filter
+  // Set filteredAddresses to an array of all addresses whose "country" matches the filter
   filter = filter.filter(function(address) {
     var addressState = address.country.toLowerCase();
 
@@ -109,26 +108,14 @@ function search4() {
   });
   renderTable();
 }
-function search5() {
+
+function shape() {
   // Format the user's search by removing leading and trailing whitespace, lowercase the string
   var filteritem = $Input.value.trim().toLowerCase();
 
-  // Set filteredAddresses to an array of all addresses whose "state" matches the filter
+  // Set filteredAddresses to an array of all addresses whose "shape" matches the filter
   filter = filter.filter(function(address) {
     var addressState = address.shape.toLowerCase();
-
-    // If true, add the address to the filteredAddresses, otherwise don't add it to filteredAddresses
-    return addressState === filteritem;
-  });
-  renderTable();
-}
-function search6() {
-  // Format the user's search by removing leading and trailing whitespace, lowercase the string
-  var filteritem = $Input.value.trim()
-
-  // Set filteredAddresses to an array of all addresses whose "state" matches the filter
-  filter = filter.filter(function(address) {
-    var addressState = address.duration.trim()
 
     // If true, add the address to the filteredAddresses, otherwise don't add it to filteredAddresses
     return addressState === filteritem;
