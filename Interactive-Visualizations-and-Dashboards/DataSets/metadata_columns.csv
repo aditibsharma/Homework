@@ -1,0 +1,23 @@
+COLUMN,TYPE,DESCRIPTION
+SAMPLEID,INTEGER,sample_id
+EVENT,TEXT,Collection event 
+ETHNICITY,TEXT,Ethnicity
+GENDER,TEXT,Gender (male/female)
+AGE,INTEGER,Age (in years)
+WFREQ,INTEGER,Washing Frequency (belly button scrubs per week)
+BBTYPE,TEXT,Innie or Outtie?
+LOCATION,TEXT,City and State in which participant lived at time of sampling
+COUNTRY012,TEXT,Country in which participant lived from age 0 to 12
+ZIP012,INTEGER,Zip code in which participant lived from age 0 to 12
+COUNTRY1319,TEXT,Country in which participant lived from age 13 to 19
+ZIP1319,INTEGER,Zip code in which participant lived from age 13 to 19
+DOG,TEXT,Do you Currently Live with a Dog (yes or no)?
+CAT,TEXT,Do you Currently Live with a Cat (yes or no)?
+IMPSURFACE013,INTEGER,Impervious surface (such as cement) in center of zipcode where participant lived from 0 to 13
+NPP013,FLOAT,Net Primary Productivity in center of zipcode where participant lived from 0 to 13
+MMAXTEMP013,FLOAT,Mean maximum monthly temperature in center of zipcode where participant lived from 0 to 13
+PFC013,FLOAT,Percent Forest Cover in center of zipcode where participant lived from 0 to 13
+IMPSURFACE1319,INTEGER,Impervious surface (such as cement) in center of zipcode where participant lived from 13 to 19
+NPP1319,FLOAT,Net Primary Productivity Impervious surface (such as cement) in center of zipcode where participant lived from 13 to 19
+MMAXTEMP1319,FLOAT,Mean maximum monthly temperaturein center of zipcode where participant lived from 13 to 19
+PFC1319,FLOAT,Percent Forest Cover in center of zipcode where participant lived from 13 to 19
