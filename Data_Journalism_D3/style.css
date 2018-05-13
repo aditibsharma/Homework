@@ -18,3 +18,10 @@
   fill: #551aaf;
   text-anchor: middle;
 }
+
+.chartAnalysis {
+font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(3, 3, 163);
+  text-anchor: middle;
+}

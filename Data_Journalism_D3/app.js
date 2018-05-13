@@ -1,5 +1,5 @@
 
-// Set up our chart
+// Step 1: Set up our chart
 //= ================================
 var svgWidth = 960;
 var svgHeight = 500;
@@ -14,7 +14,8 @@ var margin = {
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
-// Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
+// Step 2: Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
+//= =================================================================================================================
 var svg = d3.select(".chart")
   .append("svg")
   .attr("width", svgWidth)
@@ -23,18 +24,18 @@ var svg = d3.select(".chart")
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-// Import Data
+// Step 3: Import Data
 d3.csv("./data/data.csv", function (err, unemploymentData) {
   if (err) throw err;
 
-  // Step 1: Parse Data/Cast as numbers
+  // Step 4: Parse Data/Cast as numbers
    // ==============================
    unemploymentData.forEach(function (data) {
     data.UnemploymentRate = +data.UnemploymentRate;
     data.ConfidenceLimitHigh = parseInt(data.ConfidenceLimitHigh);
   });
 
-  // Step 2: Create scale functions
+  // Step 5: Create scale functions
   // ==============================
   var xLinearScale = d3.scaleLinear()
     .domain([0, d3.max(unemploymentData, d => d.UnemploymentRate)])
@@ -44,12 +45,12 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
     .domain([0, d3.max(unemploymentData, d => d.ConfidenceLimitHigh)])
     .range([height, 0]);
 
-  // Step 3: Create axis functions
+  // Step 6: Create axis functions
   // ==============================
   var bottomAxis = d3.axisBottom(xLinearScale);
   var leftAxis = d3.axisLeft(yLinearScale);
 
-  // Step 4: Append Axes to the chart
+  // Step 7: Append Axes to the chart
   // ==============================
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
@@ -58,7 +59,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   chartGroup.append("g")
     .call(leftAxis);
 
-   // Step 5: Create Circles
+   // Step 8: Create Circles
   // ==============================
   var circlesGroup = chartGroup.selectAll("circle")
   .data(unemploymentData)
@@ -69,22 +70,36 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   .attr("r", "15")
   .attr("fill", "blue")
   .attr("opacity", ".5")
+
+  // add the text on top of the circles
+  //= ==================================
+  var textGroup = chartGroup.selectAll("#circleText")
+  .data(unemploymentData)
+  .enter()
+  .append("text")
+  .text(d => d.stateAbbr)
+  .attr("id", "circleText")
+  .attr("x", d => xLinearScale(d.UnemploymentRate)-5)
+  .attr("y", d => yLinearScale(d.ConfidenceLimitHigh)+4)
+  .attr("stroke-width", "1")
+  .attr("fill", "black")
+  .attr("font-size", 8);
   
 
-  // Step 6: Initialize tool tip
+  // Step 9: Initialize tool tip
   // ==============================
   var toolTip = d3.tip()
     .attr("class", "tooltip")
     .offset([90, -60])
     .html(d =>
-      `${d.state}<br>Unemployment Rate: ${d.UnemploymentRate}<br>High Confidence Level(Female): ${d.ConfidenceLimitHigh}`
+      `${d.state}<br>Unemployment Rate: ${d.UnemploymentRate}<br>Confidence Limit: ${d.ConfidenceLimitHigh}`
     );
 
-  // Step 7: Create tooltip in the chart
+  // Step 10: Create tooltip in the chart
   // ==============================
   chartGroup.call(toolTip);
 
-  // Step 8: Create event listeners to display and hide the tooltip
+  // Step 11: Create event listeners to display and hide the tooltip
   // ==============================
   circlesGroup.on("mouseover", function (data) {
       toolTip.show(data);
@@ -94,7 +109,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
       toolTip.hide(data);
     });
 
-  // Create axes labels
+  // Step 12: Create axes labels
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - margin.left + 40)
@@ -109,5 +124,8 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
     .text("Unemployement Rate for women under 25-44 years of age");
 });
 
-
+// Step 13: Add the Chart Analysis description for the chart
+var chartAnalysis = d3.select("#chartAnalysis")
+    .append("text")
+    .text(``);
 
