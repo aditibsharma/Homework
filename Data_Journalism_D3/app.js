@@ -1,3 +1,8 @@
+//= ==============================================================================================================
+//Using the D3 techniques, created a scatter plot that represents each state with circle elements. This is coded in 
+//app.js file and data is pulled from data.csv by using the d3.csv function.
+//= ==============================================================================================================
+
 
 // Step 1: Set up our chart
 //= ================================
@@ -15,7 +20,7 @@ var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
 // Step 2: Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
-//= =================================================================================================================
+//= =========================================================================================================================
 var svg = d3.select(".chart")
   .append("svg")
   .attr("width", svgWidth)
@@ -71,7 +76,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   .attr("fill", "blue")
   .attr("opacity", ".5")
 
-  // add the text on top of the circles
+  // step 9: Add text on the cicles
   //= ==================================
   var textGroup = chartGroup.selectAll("#circleText")
   .data(unemploymentData)
@@ -82,11 +87,11 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   .attr("x", d => xLinearScale(d.UnemploymentRate)-5)
   .attr("y", d => yLinearScale(d.ConfidenceLimitHigh)+4)
   .attr("stroke-width", "1")
-  .attr("fill", "black")
+  .attr("fill", "white")
   .attr("font-size", 8);
   
 
-  // Step 9: Initialize tool tip
+  // Step 10: Initialize tool tip
   // ==============================
   var toolTip = d3.tip()
     .attr("class", "tooltip")
@@ -95,11 +100,11 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
       `${d.state}<br>Unemployment Rate: ${d.UnemploymentRate}<br>Confidence Limit: ${d.ConfidenceLimitHigh}`
     );
 
-  // Step 10: Create tooltip in the chart
+  // Step 11: Create tooltip in the chart
   // ==============================
   chartGroup.call(toolTip);
 
-  // Step 11: Create event listeners to display and hide the tooltip
+  // Step 12: Create event listeners to display and hide the tooltip
   // ==============================
   circlesGroup.on("mouseover", function (data) {
       toolTip.show(data);
@@ -109,7 +114,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
       toolTip.hide(data);
     });
 
-  // Step 12: Create axes labels
+  // Step 13: Create axes labels
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - margin.left + 40)
@@ -121,11 +126,14 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   chartGroup.append("text")
     .attr("transform", `translate(${width/2}, ${height + margin.top + 30})`)
     .attr("class", "axisText")
-    .text("Unemployement Rate for women under 25-44 years of age");
+    .text("Unemployment Rate for women under 25-44 years of age");
 });
 
-// Step 13: Add the Chart Analysis description for the chart
-var chartAnalysis = d3.select("#chartAnalysis")
-    .append("text")
-    .text(``);
+// Step 14: Add the Chart Analysis description for the chart
+//var chartAnalysis = d3.select("#chartAnalysis")
+  //  .append("text")
+    //   .text(` This chart represents a relation between the unemployed women of 25-44 years of age and the their hight confidence limit in various staes of USA.
+     //  Mississippi has the highest rate of unemployment as 9.7 for women from 25-44 years of age with an high confidence limit of 41.
+     //  North Dakota has the lowest rate of unemployment as 2.7 for women from 25-44 years of age with an high confidence limit of 63`
+    // );
 
