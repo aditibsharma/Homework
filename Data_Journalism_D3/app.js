@@ -130,10 +130,9 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
 });
 
 // Step 14: Add the Chart Analysis description for the chart
-//var chartAnalysis = d3.select("#chartAnalysis")
-  //  .append("text")
-    //   .text(` This chart represents a relation between the unemployed women of 25-44 years of age and the their hight confidence limit in various staes of USA.
-     //  Mississippi has the highest rate of unemployment as 9.7 for women from 25-44 years of age with an high confidence limit of 41.
-     //  North Dakota has the lowest rate of unemployment as 2.7 for women from 25-44 years of age with an high confidence limit of 63`
-    // );
+//var chartAnalysis = d3.select(".chartAnalysis")
+   // .append("text")
+    //.text(` This chart represents a relation between the unemployed women of 25-44 years of age and the their hight confidence limit in various staes of USA.
+    // Mississippi has the highest rate of unemployment as 9.7 for women from 25-44 years of age with an high confidence limit of 41.
+    // North Dakota has the lowest rate of unemployment as 2.7 for women from 25-44 years of age with an high confidence limit of 63`);
 
