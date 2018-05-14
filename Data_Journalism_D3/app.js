@@ -43,12 +43,12 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   // Step 5: Create scale functions
   // ==============================
   var xLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(unemploymentData, d => d.UnemploymentRate)])
-    .range([0, width]);
+    .domain([2, d3.max(unemploymentData, d => d.UnemploymentRate)])
+    .range([2, width]);
 
   var yLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(unemploymentData, d => d.ConfidenceLimitHigh)])
-    .range([height, 0]);
+    .domain([20, d3.max(unemploymentData, d => d.ConfidenceLimitHigh)])
+    .range([height, 20]);
 
   // Step 6: Create axis functions
   // ==============================
@@ -58,7 +58,7 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
   // Step 7: Append Axes to the chart
   // ==============================
   chartGroup.append("g")
-    .attr("transform", `translate(0, ${height})`)
+    .attr("transform", `translate(6, ${height})`)
     .call(bottomAxis);
 
   chartGroup.append("g")
@@ -130,9 +130,10 @@ d3.csv("./data/data.csv", function (err, unemploymentData) {
 });
 
 // Step 14: Add the Chart Analysis description for the chart
-//var chartAnalysis = d3.select(".chartAnalysis")
-   // .append("text")
-    //.text(` This chart represents a relation between the unemployed women of 25-44 years of age and the their hight confidence limit in various staes of USA.
-    // Mississippi has the highest rate of unemployment as 9.7 for women from 25-44 years of age with an high confidence limit of 41.
-    // North Dakota has the lowest rate of unemployment as 2.7 for women from 25-44 years of age with an high confidence limit of 63`);
+//var chartAnalysis = d3.select("#chartAnalysis")
+  //  .append("text")
+    //   .text(` This chart represents a relation between the unemployed women of 25-44 years of age and the their hight confidence limit in various staes of USA.
+     //  Mississippi has the highest rate of unemployment as 9.7 for women from 25-44 years of age with an high confidence limit of 41.
+     //  North Dakota has the lowest rate of unemployment as 2.7 for women from 25-44 years of age with an high confidence limit of 63`
+    // );
 
