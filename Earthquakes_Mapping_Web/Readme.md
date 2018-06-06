@@ -36,60 +36,7 @@ Your first task is to visualize an earthquake data set.
 
    * Your visualization should look something like the map above.
 
-- - -
+Final Visualisation:
+![5-Final](Images/Earth_Mag.png)
 
-### Step 2: More Data
 
-![5-Advanced](Images/5-Advanced.png)
-
-The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
-
-In this step we are going to..
-
-* Plot a second data set on our map.
-
-* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
-
-* Add layer controls to our map.
-
-- - -
-
-### Step 3: Time Keeps on Ticking
-
-![7-NotGif](Images/6-Time_Keeps_On_Ticking.gif)
-
-Many people don't know how much seismic activity is happening around them all the time. Did you know that Southern California has over 10,000 earthquakes each year alone? The USGS wants you to create a map that will visualize just how many earthquakes happen over the course of a day/week.
-
-* Your task is to use a Leaflet plugin (they can be found at <http://leafletjs.com/plugins.html>) to visualize your earthquake as it takes place over a period of time.
-
-- - -
-
-### Bonus: Above and Beyond
-
-You're so excited to be in your new position you really want to do something that will blow them away. You came up with two ideas of ways to go above and beyond:
-
-* Find another set of geospatial data that you can use to show a new correlation or insight about our existing earthquake data.
-
-* Use additional plug-ins from the [Leaflet Documentation](http://leafletjs.com/plugins.html) to further visualize our data in a unique way.
-
-  * Heatmap
-    ![Heat](Images/Heat.png)
-
-  * Data Clustering
-    ![Cluster](Images/Cluster.png)
-
-### Assessment
-
-Your final product will be assessed on the following metrics:
-
-* Completion of all steps in chosen level
-
-* Visual attraction
-
-* Professionalism
-
-**Good luck!**
-
-## Copyright
-
-Coding Boot Camp (C) 2016. All Rights Reserved.
